@@ -1,4 +1,3 @@
-
 % Assignment 1
 % Marc van den Berg
 % Tilburg University
