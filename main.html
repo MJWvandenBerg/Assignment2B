@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="TOC">
+<ul>
+<li><a href="#/question-1">Question 1</a></li>
+<li><a href="#/question-2">Question 2</a></li>
+</ul>
+</section>
+
+<section class="slide level2">
+
+<p>% Assignment 1 % Marc van den Berg % Tilburg University</p>
+</section>
+<section><section id="question-1" class="titleslide slide level1"><h1>Question 1</h1></section><section id="a" class="slide level2">
+<h1>a</h1>
+<p><span class="math display">\[L=0.2(40); 0.6(50); 0.2(30)\]</span></p>
+<p>Expected utility theory with <span class="math inline">\(u(x)=x/10\)</span> with wealth <span class="math inline">\(x=0\)</span></p>
+<p><span class="math display">\[EU(L)= \sum_{i}^{} P_iu(x)= 0.2(40/10)+0.6(50/10)+0.2(30/10)=4.4\]</span></p>
+<table style="width:12%;">
+<colgroup>
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Hence the expected utility is <span class="math inline">\(4.4\)</span> . Let <span class="math inline">\(m\)</span> denote the certainty equivalent then <span class="math inline">\(U(m)=m/10 = 4.4\)</span> therefore <span class="math inline">\(m=44\)</span></td>
+</tr>
+</tbody>
+</table>
+</section><section id="b" class="slide level2">
+<h1>B</h1>
+<p>We recall that: <span class="math display">\[L=0.2(40); 0.6(50); 0.2(30)\]</span> Rank dependent utility with <span class="math inline">\(u(x)=x/10\)</span> , <span class="math inline">\(w(p)=p^2\)</span> and <span class="math inline">\(wealth = 0\)</span></p>
+</section><section class="slide level2">
+
+<p><span class="math display">\[RDU(L) = \sum_{i}^{} \pi_iu(x)\]</span> <span class="math inline">\(\pi(50) = w(0.6) - w(0) = 0.6^2 = 0.36\)</span> $(40) = w(0.8) - w(0.6) = 0.8^2 - 0.6^2 = 0.28 $ <span class="math inline">\(\pi(30) = w(1) - w(0.8) = 1^2 - 0.8^2 = 0.36\)</span></p>
+</section><section class="slide level2">
+
+<p><span class="math inline">\(RDU(L) = 0.36*5 + 0.28*4 + 0.36*3 = 4\)</span></p>
+<p>Let <span class="math inline">\(m\)</span> denote the certainty equivalent then <span class="math inline">\(U(m)=m/10 = 4\)</span> therefore <span class="math inline">\(m=40\)</span></p>
+</section></section>
+<section><section id="question-2" class="titleslide slide level1"><h1>Question 2</h1></section><section class="slide level2">
+
+<p>Under expected utility theory, a preference for <span class="math inline">\(A\)</span> over <span class="math inline">\(B\)</span> implies: <span class="math inline">\(0.8u(4000) + 0.2u(0)&lt;u(3000)\)</span> or assuming <span class="math inline">\(u(0)=0\)</span> ; <span class="math display">\[0.8u(4000)&lt;u(3000)\]</span></p>
+</section><section class="slide level2">
+
+<p>A preference for prospect <span class="math inline">\(D\)</span> over <span class="math inline">\(C\)</span> implies: <span class="math inline">\(0.2u(4000) &gt; 0.25u(3000)\)</span> <span class="math inline">\(0.2/0.25u(4000)&gt;u(3000)\)</span> <span class="math display">\[0.8u(4000)&gt;u(3000)\]</span></p>
+<p>Which shows inconsistency!</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
